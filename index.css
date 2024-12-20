@@ -40,6 +40,10 @@ header{
 .navbar ul li a{
     text-decoration: none;
     color: #000;
+    transition: font-size 0.2s ease;
+}
+.navbar ul li a:hover{
+    font-size: 30px;
 }
 .container1{
     text-align: center;
@@ -56,6 +60,7 @@ header{
     height: auto;
     border: 1px solid #000;
     border-radius: 20px;
+    box-shadow: 1px 1px 7px ;
 }
 .grid-container{
     display: grid;
@@ -66,12 +71,18 @@ header{
 .item{
     text-align: start;
     padding: 20px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 1px 1px 10px ;
 }
 .item img{
     max-width: 100%;
     height: auto;
     border: 1px solid #000;
 }
+.item:hover{
+    transform: translateY(-10px);
+}
+
 .item h3, .item h4{
     margin: 10px 0;
 }
